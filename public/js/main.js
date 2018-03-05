@@ -7,15 +7,15 @@ var questions = [
     correctAnswer: "Object",
      },
     {
-      prompt: "Rewrite the following Javascript statment in C#: </br> var flag = true",
-      correctAnswer: "bool flag = true"
+      prompt: "Rewrite the following Javascript statment in C#: </br> var flag = true;",
+      correctAnswer: "bool flag = true;"
     },
     {
-      prompt: "double num1 = 9.34534910;</br>int num2 = (int)num1</br>System.Console.WriteLine(num2);",
+      prompt: "double num1 = 9.34534910;</br>int num2 = (int)num1;</br>System.Console.WriteLine(num2);",
       correctAnswer: "9"
     },
     {
-      prompt: "string greeting = 'hello';</br> System.Console.WriteLine(greeting)",
+      prompt: "string greeting = 'hello';</br> System.Console.WriteLine(greeting);",
       correctAnswer: "error CS1012: Too many characters in character literal"
     },
     {
@@ -36,11 +36,11 @@ var questions = [
     },
     {
       prompt: "Given a list of integers, write a function that will iterate through it and print all its values",
-      correctAnswer: "function printVals(int[] arr)</br>{ </br>foreach(int x in arr)</br>{</br>Console.WriteLine(x)<br>}<br>}"
+      correctAnswer: "function printVals(int[] arr)</br>{ </br>&nbsp;&nbsp;&nbsp;&nbsp;foreach(int x in arr)</br>&nbsp;&nbsp;&nbsp;&nbsp;{</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine(x);<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}"
     },
     {
       prompt: "Write a function that takes in a list of ints and a number n, and removes the nth element of the list",
-      correctAnswer: "static void removeNthElement(List\&lt;int\&gt; nums, int n)</br>{</br>nums.RemoveAt(n-1);</br>}"
+      correctAnswer: "static void removeNthElement(List\&lt;int\&gt; nums, int n)</br>{</br>&nbsp;&nbsp;&nbsp;&nbsp;nums.RemoveAt(n-1);</br>}"
     },
     {
       prompt: "What is the alternative to the 'public' keyword?",
@@ -56,32 +56,32 @@ var questions = [
     },
 
     {
-      prompt: `What is the output of the following function?:</br> public static string sayName(string name)</br>{</br>Console.WriteLine(name)</br>}</br> sayName("Bob")`,
+      prompt: `What is the output of the following function?:</br> public static string sayName(string name)</br>{</br>&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine(name);</br>}</br> sayName("Bob");`,
       correctAnswer: "error CS0161: 'Program.sayName(string)': not all code paths return a value"
     },
     {
-      prompt: `What is the output of the following function?: public static void sayName(string name="+"Bob"+")</br>{</br>Console.WriteLine(name)</br>}</br>sayName("Tom")`,
+      prompt: `What is the output of the following function?:</br> public static void sayName(string name="+"Bob"+")</br>{</br>&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine(name);</br>}</br>sayName("Tom");`,
       correctAnswer: "Tom"
     },
     { 
-      prompt: "What is the output of the following code?</br> int[] arr = {2,4,6,8}</br> Console.WriteLine(arr[2]);",
+      prompt: "What is the output of the following code?</br> int[] arr = {2,4,6,8};</br> Console.WriteLine(arr[2]);",
       answer: "6"
     },
     {
       prompt: "Create an empty array to hold numbers, called numArray, with a length of 7",
-      correctAnswer: "int[] numArray = new int[7]"
+      correctAnswer: "int[] numArray = new int[7];"
     },
     {
-      prompt: "What is the output of the following code?</br>int[] arr = {1,2,3,4,5} </br>arr[0] = 8</br>foreach(int num in arr){Console.WriteLine(num)}",
-      correctAnswer: "int[] numArray = new int[]{1,2,3,4,5}</br> OR int[] numArray = {1,2,3,4,5}"
+      prompt: "What is the output of the following code?</br>int[] arr = {1,2,3,4,5}; </br>arr[0] = 8;</br>foreach(int num in arr)</br>{</br>&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine(num);</br>}",
+      correctAnswer: "int[] numArray = new int[]{1,2,3,4,5};</br> OR </br>int[] numArray = {1,2,3,4,5};"
     },
     {
       prompt: "Create an empty three-dimensional array, called 3DArray, which holds 5 inner arrays, each of which holds 3 inner arrays, each of which has a length of 7",
-      correctAnswer: "int[,,] 3DArray = new int[5,3,7]"
+      correctAnswer: "int[,,] 3DArray = new int[5,3,7];"
     },
     {
       prompt: "Create an empty jagged array, called jaggedArray, which holds 4 subarrays of varying lengths",
-      correctAnswer: "int[][,] jaggedArray = new int[3][,]"
+      correctAnswer: "int[][,] jaggedArray = new int[3][,];"
     },
     {
       prompt: "True or false? C# is heavily object-oriented",
@@ -92,16 +92,16 @@ var questions = [
       correctAnswer: "Static"
     },
     {
-      prompt: "What is the output of the following code? int num = 0; </br>if(num === 0)</br>{</br>Console.WriteLine(num)</br>}",
+      prompt: "What is the output of the following code?</br> int num = 0; </br>if(num === 0)</br>{</br>&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine(num);</br>}",
       correctAnswer: "error CS1525: Invalid expression term '='"
     },
     {
-      prompt: `What is the output of the following code? Console.WriteLine($"Hello my name is {0}", "Sara"`,
+      prompt: `What is the output of the following code? </br>Console.WriteLine($"Hello my name is {0}", "Sara");`,
       correctAnswer: "Hello my name is 0."
     },
     {
       prompt: "Write code that prints a random floating-point number between 0.0 and 1.0",
-      correctAnswer: "Random rand = new Random();</br> Console.WriteLine(rand.NextDouble()) "
+      correctAnswer: "Random rand = new Random();</br> Console.WriteLine(rand.NextDouble()); "
     }
 
 ];
